@@ -1,0 +1,201 @@
+:root {
+    /* ### Primary */
+
+    --Soft-red: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+
+    /* ### Neutral */
+
+    --Dark-brown: hsl(25, 47%, 15%);
+    --Medium-brown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Very-pale-orange: hsl(33, 100%, 98%);
+}
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: var(--Cream);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+}
+
+main {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+main .top {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--Soft-red);
+    padding: 15px;
+    border-radius: 0.8rem;
+    margin-bottom: 20px;
+}
+
+main .top .balance {
+    line-height: 1.6;
+    color: var(--Very-pale-orange);
+    margin-left: 5px;
+}
+
+.balance p {
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.balance span {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.top .logo img {
+    width: 50px;
+    margin-right: 5px;
+}
+
+.top .logo {
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    background-color: var(--Very-pale-orange);
+    border-radius: 0.8rem;
+    padding: 25px;
+}
+
+.content h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.charts {
+    display: flex;
+    /* align-items: end; */
+    justify-content: space-between;
+    min-height: 200px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.charts div {
+    width: 35px;
+    /* height: 200px; */
+    max-height: 275px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.charts div .euro {
+    width: 45px;
+    height: 30px;
+    background-color: black;
+    padding: 0.5px 4px;
+    border-radius: 2px;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+    visibility: hidden;
+    transition: visibility 0.3s linear;
+}
+
+
+
+.charts div span {
+    width: 35px;
+    background-color: var(--Soft-red);
+    height: 100px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.charts p {
+    font-size: 14px;
+    margin-top: 5px;
+    color: var(--Medium-brown);
+}
+
+hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: hsl(27, 66%, 93%);
+    /* old IE */
+    background-color: hsl(27, 66%, 92%);
+    /* Modern Browsers */
+    /*     
+    border: none;
+    border: 0.2px solid hsl(27, 66%, 93%); */
+}
+
+.lower-content {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lower-content h4 {
+    font-size: 12px;
+    color: var(--Medium-brown);
+    font-weight: 300;
+}
+
+.lower-content .total-this-month {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.lower-content .total-this-month span.profit {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.lower-content .from-last-month {
+    text-align: right;
+}
+
+.from-last-month p {
+    font-size: 12px;
+    color: var(--Medium-brown);
+    font-weight: 300;
+}
+
+.from-last-month span.percent {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+@media (max-width: 375px) {
+    main {
+        width: 350px;
+    }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="CSS/all.min.css">
+  <link rel="stylesheet" href="CSS/normalize.css">
+  <link rel="stylesheet" href="CSS/master.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap"
+    rel="stylesheet">
+
+  <title>Expenses chart component</title>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      color: hsl(10, 79%, 65%);
+      font-weight: bold;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+      text-decoration: none;
+      font-weight: bolder;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="top">
+      <div class="balance">
+        <p>My balance</p>
+        <span>$921.48</span>
+      </div>
+      <div class="logo">
+        <img src="images/logo.svg" alt="logo">
+      </div>
+    </div>
+    <div class="content">
+      <h1>Spending - Last 7 days</h1>
+      <div class="charts">
+        <div class="mon">
+          <div class="euro" id="mon"></div>
+          <span class="mon" id="span"></span>
+          <p>mon</p>
+        </div>
+        <div class="tue">
+          <div class="euro" id="tue"></div>
+          <span class="tue" id="span"></span>
+          <p>tue</p>
+        </div>
+        <div class="wed">
+          <div class="euro" id="wed"></div>
+          <span class="wed" id="span"></span>
+          <p>wed</p>
+        </div>
+        <div class="thu">
+          <div class="euro" id="thu"></div>
+          <span class="thu" id="span"></span>
+          <p>thu</p>
+        </div>
+        <div class="fri">
+          <div class="euro" id="fri"></div>
+          <span class="fri" id="span"></span>
+          <p>fri</p>
+        </div>
+        <div class="sat">
+          <div class="euro" id="sat"></div>
+          <span class="sat" id="span"></span>
+          <p>sat</p>
+        </div>
+        <div class="sun">
+          <div class="euro" id="sun"></div>
+          <span class="sun" id="span"></span>
+          <p>sun</p>
+        </div>
+      </div>
+      <hr>
+      <div class="lower-content">
+        <h4>Total this month</h4>
+        <div class="total-this-month">
+
+          <span class="profit">$478.33</span>
+          <div class="from-last-month">
+            <span class="percent">+2.4%</span>
+            <p>from last month</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Coded by <a href="#" target="_blank">Mahmoud Amin</a>.
+    </div>
+  </footer>
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
